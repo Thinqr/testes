@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #000;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-18px {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.text-shadow {
+  text-shadow: -2px 2px 90px 0px #295ac7, 0px 5px 60px 0px #1d54c9,
+    0px -5px 200px 0px #b7dcff, 1px 1px 5px 0px #3567cc,
+    1px -1px 40px 0px #6ea3e5, -1px 0px 2.4px 0px #6c9add,
+    0px -1px 10px 0px #3264cb, 0px 2px 80px 0px #1f52c2;
+}
+
+.gradient-border {
+  transition: background 1s ease-in-out;
+  transition-delay: 0.5s;
+}
+.gradient-border-hover {
+  background: linear-gradient(0deg, #3d639a, #3d639a),
+    conic-gradient(
+      from 268.79deg at 14.71% 44.43%,
+      #223f6b -0.97deg,
+      rgba(34, 34, 34, 0.6) 100.56deg,
+      rgba(34, 34, 34, 0.8) 269.32deg,
+      #223f6b 359.03deg,
+      rgba(34, 34, 34, 0.6) 460.56deg
+    );
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.gradient-border-hover {
+  border: 1px solid;
+
+  border-image-source: linear-gradient(0deg, #3d639a, #3d639a),
+    conic-gradient(
+      from 268.79deg at 14.71% 44.43%,
+      #223f6b -0.97deg,
+      rgba(34, 34, 34, 0.6) 100.56deg,
+      rgba(34, 34, 34, 0.8) 269.32deg,
+      #223f6b 359.03deg,
+      rgba(34, 34, 34, 0.6) 460.56deg
+    );
+}
