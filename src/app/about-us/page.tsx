@@ -18,8 +18,6 @@ export const metadata: Metadata = {
   description: "Born from academic research, we bridge science and innovation.",
 };
 
-// snap-y snap-mandatory h-screen overflow-scroll
-
 export default function Home() {
   return (
     <section className="">
